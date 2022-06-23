@@ -1,0 +1,108 @@
+#content-row{
+    margin-top:10%;
+}
+#page-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#feature-carousel {
+    margin-top: 3%;
+    margin-bottom: 10%;
+    background: black;
+}
+#feature-carousel-inner {
+    margin: auto;
+    height: 250px;
+}
+#statement-div{
+    font-family: "Lemon Regular";
+    color: gray;
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-bottom: 10%;
+}
+body{
+    background-image: url(../images/BG.png);
+    background-size: cover;
+    background-color: #A18F82;
+    color:#212529;
+}
+.quote-block{
+    background-color:#68756c;
+    opacity: 0.3;
+    min-width:1px;
+    max-width: 3px;
+    border-radius:10px;
+    margin-right: 25px;
+}
+.img-portrait{
+    overflow:hidden;
+    box-shadow: 3px 3px 8px 8px gray;
+    margin: 5% auto 10% auto;
+    max-width: 400px;
+    border-radius: 80%;
+    border-bottom-left-radius: 95%;
+    border-top-right-radius: 95%;
+    transform: rotateZ(15deg);
+}
+.img-portrait img{
+    transform: rotateZ(-15deg);
+}
+.navbar{
+    background-color:#E1EDB9;
+}
+.container{
+    box-shadow: 5px 0px 45px white,-5px 0px 45px #A18F82;
+    background-image: url(../images/MG.png);
+    background-color: #F0F2EB;
+}
+.blog-item{
+    margin: 0 auto 1.5em auto;
+    padding: 1.5em 2em .7em 2em;
+}
+.blog-item img{
+    max-width: 512px;
+    margin: 0 0 35px 0;
+}
+.navbar{
+    font-family: "Absolute Empire";
+    font-size: 1.2em;
+}
+.navbar .navbar-brand {
+    font-size: 1.5em;
+}
+.navbar-light .navbar-nav .nav-link {
+    
+    color: black;
+    margin-left: 20px;
+}
+a.nav-link.active {
+    color:#FF4242;
+}
+a.nav-link:hover{
+    color:#83A2BB;
+}
+a.nav-link:active{
+    color:#6C0000;
+}
+/*!
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-block+.btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+    width: 100%;
+}
