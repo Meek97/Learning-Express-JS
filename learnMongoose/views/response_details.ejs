@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<%- include('./partials/_head');%>
+	<body>
+	  <%- include('./partials/_header'); %>
+	  <%- include('./partials/_bootstrapJS'); %>
+	<h2><%= response.key%></h2>
+	<a href="/responses">back to list</a>
+	<br><br>
+	<div class="container-fluid">
+		<div class="row">
+		<% response.submissions.forEach(function(response){ %>
+			<div class="col-sm-10 col-md-5 col-lg-3 text-center border">
+				<figure class="figure">
+					<img src=<%= response.response %> alt=<%= response.response %> class="figure-img img-fluid-rounded" width=150>
+					<figcaption class="figure-caption">Submitted By: <%= response.author %></figcaption>
+				</figure>
+			</div>
+		<% }); %>
+		</div>
+	</div>
+  </body>
+</html>

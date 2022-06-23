@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/_head');%>
+  <body>
+	<div class="container-fluid">
+		<%- include('./partials/_header'); %>
+		<%- include('./partials/_bootstrapJS'); %>
+    	<h1>Responses</h1>
+		<div class="col-md-12 col-lg-3 ">
+		<ul class="list-group">
+			<% response_list.forEach(function(response){ %>
+			<a href=<%-'responses/'+response.key%> class="list-group-item list-group-item-action">
+				<li class="d-flex align-items-center">
+					<span class="badge bg-primary rounded-pill"><%= response.submissions.length%></span>
+					<% if(response.submissions.length<10){%>
+						&nbsp;
+					<%}%>
+					&nbsp;&nbsp;
+					<%= response.key%>
+				</li>
+			</a>
+			<% }); %>
+		</ul>	
+	</div>
+	</div>
+  </body>
+</html>
